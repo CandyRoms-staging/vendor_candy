@@ -106,6 +106,9 @@ type Product_variables struct {
 	Build_pixelgapps_gcam struct {
 		Cflags []string
 	}
+	Target_uses_fod_hack struct {
+		Cflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -136,4 +139,5 @@ type ProductVariables struct {
 	Needs_netd_direct_connect_rule  *bool `json:",omitempty"`
     Build_pixelgapps  *bool `json:",omitempty"`
     Build_pixelgapps_gcam  *bool `json:",omitempty"`
+	Target_uses_fod_hack  *bool `json:",omitempty"`
 }
